@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13591ABDC80F54A9A4565D0D /* Pods_KakaoTalkCopyRe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FFD8600951265B97863439 /* Pods_KakaoTalkCopyRe.framework */; };
+		4D00AEC624AB217300DE589B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D00AEC524AB217300DE589B /* GoogleService-Info.plist */; };
+		4D00AEC824AB29BE00DE589B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00AEC724AB29BE00DE589B /* SignInViewController.swift */; };
+		4D00AECA24AB29D300DE589B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00AEC924AB29D300DE589B /* SignUpViewController.swift */; };
+		4D00AECF24AB3FAE00DE589B /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00AECE24AB3FAE00DE589B /* FriendsViewController.swift */; };
 		4D26AEE824AB19CB00003272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D26AEE724AB19CB00003272 /* AppDelegate.swift */; };
 		4D26AEEA24AB19CB00003272 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D26AEE924AB19CB00003272 /* SceneDelegate.swift */; };
 		4D26AEEC24AB19CB00003272 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D26AEEB24AB19CB00003272 /* ViewController.swift */; };
@@ -16,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D00AEC524AB217300DE589B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D00AEC724AB29BE00DE589B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		4D00AEC924AB29D300DE589B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4D00AECE24AB3FAE00DE589B /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		4D26AEE424AB19CB00003272 /* KakaoTalkCopyRe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoTalkCopyRe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D26AEE724AB19CB00003272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D26AEE924AB19CB00003272 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,9 @@
 		4D26AEF024AB19CC00003272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D26AEF324AB19CC00003272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D26AEF524AB19CC00003272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FFD8600951265B97863439 /* Pods_KakaoTalkCopyRe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoTalkCopyRe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD4B84450BF7C86785B489A /* Pods-KakaoTalkCopyRe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoTalkCopyRe.release.xcconfig"; path = "Target Support Files/Pods-KakaoTalkCopyRe/Pods-KakaoTalkCopyRe.release.xcconfig"; sourceTree = "<group>"; };
+		E2D863CA6A93856525271B43 /* Pods-KakaoTalkCopyRe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoTalkCopyRe.debug.xcconfig"; path = "Target Support Files/Pods-KakaoTalkCopyRe/Pods-KakaoTalkCopyRe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13591ABDC80F54A9A4565D0D /* Pods_KakaoTalkCopyRe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		109433689C892F32BAE685DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94FFD8600951265B97863439 /* Pods_KakaoTalkCopyRe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D00AECB24AB3EAA00DE589B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4D00AECE24AB3FAE00DE589B /* FriendsViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		4D26AEDB24AB19CA00003272 = {
 			isa = PBXGroup;
 			children = (
 				4D26AEE624AB19CB00003272 /* KakaoTalkCopyRe */,
 				4D26AEE524AB19CB00003272 /* Products */,
+				9A07BA2DA41662A57879F945 /* Pods */,
+				109433689C892F32BAE685DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +87,8 @@
 		4D26AEE624AB19CB00003272 /* KakaoTalkCopyRe */ = {
 			isa = PBXGroup;
 			children = (
+				4D00AECB24AB3EAA00DE589B /* TabBar */,
+				4D00AEC524AB217300DE589B /* GoogleService-Info.plist */,
 				4D26AEE724AB19CB00003272 /* AppDelegate.swift */,
 				4D26AEE924AB19CB00003272 /* SceneDelegate.swift */,
 				4D26AEEB24AB19CB00003272 /* ViewController.swift */,
@@ -63,8 +96,19 @@
 				4D26AEF024AB19CC00003272 /* Assets.xcassets */,
 				4D26AEF224AB19CC00003272 /* LaunchScreen.storyboard */,
 				4D26AEF524AB19CC00003272 /* Info.plist */,
+				4D00AEC724AB29BE00DE589B /* SignInViewController.swift */,
+				4D00AEC924AB29D300DE589B /* SignUpViewController.swift */,
 			);
 			path = KakaoTalkCopyRe;
+			sourceTree = "<group>";
+		};
+		9A07BA2DA41662A57879F945 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2D863CA6A93856525271B43 /* Pods-KakaoTalkCopyRe.debug.xcconfig */,
+				BFD4B84450BF7C86785B489A /* Pods-KakaoTalkCopyRe.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D26AEF824AB19CC00003272 /* Build configuration list for PBXNativeTarget "KakaoTalkCopyRe" */;
 			buildPhases = (
+				E9A197C3CB83B38855489C37 /* [CP] Check Pods Manifest.lock */,
 				4D26AEE024AB19CB00003272 /* Sources */,
 				4D26AEE124AB19CB00003272 /* Frameworks */,
 				4D26AEE224AB19CB00003272 /* Resources */,
+				6E4513BD298A0117FD595D90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D26AEF424AB19CC00003272 /* LaunchScreen.storyboard in Resources */,
+				4D00AEC624AB217300DE589B /* GoogleService-Info.plist in Resources */,
 				4D26AEF124AB19CC00003272 /* Assets.xcassets in Resources */,
 				4D26AEEF24AB19CB00003272 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +180,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E4513BD298A0117FD595D90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoTalkCopyRe/Pods-KakaoTalkCopyRe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoTalkCopyRe/Pods-KakaoTalkCopyRe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoTalkCopyRe/Pods-KakaoTalkCopyRe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9A197C3CB83B38855489C37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoTalkCopyRe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D26AEE024AB19CB00003272 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D00AEC824AB29BE00DE589B /* SignInViewController.swift in Sources */,
 				4D26AEEC24AB19CB00003272 /* ViewController.swift in Sources */,
 				4D26AEE824AB19CB00003272 /* AppDelegate.swift in Sources */,
 				4D26AEEA24AB19CB00003272 /* SceneDelegate.swift in Sources */,
+				4D00AECF24AB3FAE00DE589B /* FriendsViewController.swift in Sources */,
+				4D00AECA24AB29D300DE589B /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +374,7 @@
 		};
 		4D26AEF924AB19CC00003272 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2D863CA6A93856525271B43 /* Pods-KakaoTalkCopyRe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +393,7 @@
 		};
 		4D26AEFA24AB19CC00003272 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD4B84450BF7C86785B489A /* Pods-KakaoTalkCopyRe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
