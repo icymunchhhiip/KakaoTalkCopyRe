@@ -18,6 +18,12 @@
 		4D26AEEF24AB19CB00003272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D26AEED24AB19CB00003272 /* Main.storyboard */; };
 		4D26AEF124AB19CC00003272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D26AEF024AB19CC00003272 /* Assets.xcassets */; };
 		4D26AEF424AB19CC00003272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D26AEF224AB19CC00003272 /* LaunchScreen.storyboard */; };
+		4DA4712424AC09C000E305CB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4712324AC09BF00E305CB /* UserModel.swift */; };
+		4DA4712624AC0E3F00E305CB /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4712524AC0E3F00E305CB /* ChatsViewController.swift */; };
+		4DA4712824AC0EA700E305CB /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4712724AC0EA700E305CB /* MoreViewController.swift */; };
+		4DA4712B24AC1DAD00E305CB /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4712A24AC1DAD00E305CB /* MyProfileViewController.swift */; };
+		4DA4712D24AC3F5600E305CB /* PersonalChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4712C24AC3F5600E305CB /* PersonalChatViewController.swift */; };
+		4DB33D2224AC476200DDD97C /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB33D2124AC476200DDD97C /* ChatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,12 @@
 		4D26AEF024AB19CC00003272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D26AEF324AB19CC00003272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D26AEF524AB19CC00003272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA4712324AC09BF00E305CB /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4DA4712524AC0E3F00E305CB /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		4DA4712724AC0EA700E305CB /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		4DA4712A24AC1DAD00E305CB /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		4DA4712C24AC3F5600E305CB /* PersonalChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalChatViewController.swift; sourceTree = "<group>"; };
+		4DB33D2124AC476200DDD97C /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		94FFD8600951265B97863439 /* Pods_KakaoTalkCopyRe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoTalkCopyRe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD4B84450BF7C86785B489A /* Pods-KakaoTalkCopyRe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoTalkCopyRe.release.xcconfig"; path = "Target Support Files/Pods-KakaoTalkCopyRe/Pods-KakaoTalkCopyRe.release.xcconfig"; sourceTree = "<group>"; };
 		E2D863CA6A93856525271B43 /* Pods-KakaoTalkCopyRe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoTalkCopyRe.debug.xcconfig"; path = "Target Support Files/Pods-KakaoTalkCopyRe/Pods-KakaoTalkCopyRe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				4D00AECE24AB3FAE00DE589B /* FriendsViewController.swift */,
+				4DA4712524AC0E3F00E305CB /* ChatsViewController.swift */,
+				4DA4712724AC0EA700E305CB /* MoreViewController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -87,6 +101,8 @@
 		4D26AEE624AB19CB00003272 /* KakaoTalkCopyRe */ = {
 			isa = PBXGroup;
 			children = (
+				4DA4712924AC1D9800E305CB /* Friends */,
+				4DA4712224AC09A000E305CB /* Model */,
 				4D00AECB24AB3EAA00DE589B /* TabBar */,
 				4D00AEC524AB217300DE589B /* GoogleService-Info.plist */,
 				4D26AEE724AB19CB00003272 /* AppDelegate.swift */,
@@ -98,8 +114,26 @@
 				4D26AEF524AB19CC00003272 /* Info.plist */,
 				4D00AEC724AB29BE00DE589B /* SignInViewController.swift */,
 				4D00AEC924AB29D300DE589B /* SignUpViewController.swift */,
+				4DA4712C24AC3F5600E305CB /* PersonalChatViewController.swift */,
 			);
 			path = KakaoTalkCopyRe;
+			sourceTree = "<group>";
+		};
+		4DA4712224AC09A000E305CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4712324AC09BF00E305CB /* UserModel.swift */,
+				4DB33D2124AC476200DDD97C /* ChatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DA4712924AC1D9800E305CB /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4712A24AC1DAD00E305CB /* MyProfileViewController.swift */,
+			);
+			path = Friends;
 			sourceTree = "<group>";
 		};
 		9A07BA2DA41662A57879F945 /* Pods */ = {
@@ -227,12 +261,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA4712824AC0EA700E305CB /* MoreViewController.swift in Sources */,
 				4D00AEC824AB29BE00DE589B /* SignInViewController.swift in Sources */,
+				4DA4712424AC09C000E305CB /* UserModel.swift in Sources */,
+				4DA4712B24AC1DAD00E305CB /* MyProfileViewController.swift in Sources */,
 				4D26AEEC24AB19CB00003272 /* ViewController.swift in Sources */,
 				4D26AEE824AB19CB00003272 /* AppDelegate.swift in Sources */,
 				4D26AEEA24AB19CB00003272 /* SceneDelegate.swift in Sources */,
 				4D00AECF24AB3FAE00DE589B /* FriendsViewController.swift in Sources */,
+				4DA4712624AC0E3F00E305CB /* ChatsViewController.swift in Sources */,
+				4DA4712D24AC3F5600E305CB /* PersonalChatViewController.swift in Sources */,
 				4D00AECA24AB29D300DE589B /* SignUpViewController.swift in Sources */,
+				4DB33D2224AC476200DDD97C /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,6 +43,13 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.present(imagePicker, animated: true, completion: nil)
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        profileImageView.image = info[.originalImage] as? UIImage
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func OKButtonTapped(_ sender: Any) {
         guard let email = emailTextField.text, !email.isEmpty else { self.displayOKAlert(err: nil, title: nil, msg: SignUpAlertMsg.emptyEmail.rawValue); return }
         guard let password = passwordTextField.text, !password.isEmpty else { self.displayOKAlert(err: nil, title: nil, msg: SignUpAlertMsg.emptyPassword.rawValue); return }
