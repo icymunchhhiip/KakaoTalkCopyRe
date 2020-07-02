@@ -15,7 +15,6 @@ class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     
     var array: [UserModel] = []
-    var selectedIndex: Int?
     
     @objc func printTestItem() {
         print("clickckckckckck")
@@ -46,7 +45,8 @@ class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if let view = self.storyboard?.instantiateViewController(identifier: "ProfileTabBarController") as? ProfileTabBarController {
+        if let view = self.storyboard?.instantiateViewController(identifier: "ProfileViewController") as? ProfileViewController {
+            view.profileInfo = array[indexPath.row]
             view.modalPresentationStyle = .fullScreen
             self.present(view, animated: true, completion: nil)
         }
