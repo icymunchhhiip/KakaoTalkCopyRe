@@ -602,18 +602,39 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubble.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kZE-tg-goN">
-                                                    <rect key="frame" x="294" y="13" width="66" height="46"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="kZE-tg-goN">
+                                                    <rect key="frame" x="294" y="11" width="66" height="52"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZj-2A-cya">
-                                                    <rect key="frame" x="306" y="24" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNd-sS-knC">
+                                                    <rect key="frame" x="280" y="35" width="6" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2020.11.11 11:11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDd-ng-3yP">
+                                                    <rect key="frame" x="218" y="52" width="68" height="11"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                    <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZj-2A-cya">
+                                                    <rect key="frame" x="303" y="27" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kZE-tg-goN" firstAttribute="topMargin" secondItem="oZj-2A-cya" secondAttribute="top" constant="1" id="8Rm-1x-Eog"/>
+                                                <constraint firstItem="kZE-tg-goN" firstAttribute="trailingMargin" secondItem="oZj-2A-cya" secondAttribute="trailing" constant="7" id="Mzd-y5-8Jh"/>
+                                                <constraint firstItem="kZE-tg-goN" firstAttribute="bottomMargin" secondItem="oZj-2A-cya" secondAttribute="bottom" constant="9" id="Qab-q4-Gsr"/>
+                                                <constraint firstAttribute="bottom" secondItem="lDd-ng-3yP" secondAttribute="bottom" constant="7" id="ara-Vc-Jiw"/>
+                                                <constraint firstItem="kZE-tg-goN" firstAttribute="leading" secondItem="lDd-ng-3yP" secondAttribute="trailing" constant="8" id="e7o-VV-xVa"/>
+                                                <constraint firstItem="kZE-tg-goN" firstAttribute="leadingMargin" secondItem="oZj-2A-cya" secondAttribute="leading" constant="-1" id="r3Q-Pe-E4S"/>
+                                                <constraint firstItem="oZj-2A-cya" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r5Q-wJ-MBB" secondAttribute="leadingMargin" constant="17" id="rmB-8J-qlM"/>
+                                                <constraint firstItem="lDd-ng-3yP" firstAttribute="top" secondItem="WNd-sS-knC" secondAttribute="bottom" constant="2" id="ttE-uR-olH"/>
+                                                <constraint firstItem="kZE-tg-goN" firstAttribute="leading" secondItem="WNd-sS-knC" secondAttribute="trailing" constant="8" id="wiR-ox-xvU"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RgN-7K-J5z">
@@ -659,8 +680,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Group" width="47" height="34"/>
         <image name="bubble.left.fill" catalog="system" width="128" height="110"/>
-        <image name="bubble.right.fill" catalog="system" width="128" height="110"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="gift" catalog="system" width="128" height="121"/>
         <image name="globe" catalog="system" width="128" height="121"/>
